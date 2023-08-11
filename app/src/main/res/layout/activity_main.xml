@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:src="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/test" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/bamin_res"
+            android:text="@string/name_tag"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:autofillHints="name"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColorHint="#A1887F"
+            android:textSize="20sp"
+            android:id="@+id/name"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/bamin_res"
+            android:text="@string/ID"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/ID_hint"
+            android:inputType="text"
+            android:id="@+id/ID"
+            android:textColorHint="#A1887F"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/PASS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/bamin_res"
+            android:text="@string/password_tag"
+
+
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:autofillHints="password"
+            android:hint="@string/password"
+            android:id="@+id/pass"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="50dp"
+            android:layout_marginStart="125sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/login_tag"
+            android:fontFamily="@font/bamin_res"
+            android:textSize="20sp"
+            android:id="@+id/login"/>
+        <Button
+            android:id="@+id/join"
+            android:layout_width="150sp"
+            android:layout_height="50dp"
+            android:layout_marginStart="125sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/join_tag"
+            android:fontFamily="@font/bamin_res"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".myselfActivity">
+
+    <ImageView
+        android:id="@+id/randomImageView"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/test"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 : "
+        android:layout_below="@id/randomImageView"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_marginTop="30dp"
+      android:layout_marginStart="120dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/bamin_res"
+        android:id="@+id/startName"
+
+
+        />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/startName"
+        android:layout_below="@id/randomImageView"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/bamin_res"
+
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startName"
+        android:textSize="25dp"
+        android:text="나이 : 23"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/bamin_res"
+        android:layout_marginTop="30dp"
+        android:id="@+id/startAge"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startAge"
+        android:textSize="25dp"
+        android:text="mbti : isfp"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/bamin_res"
+        android:layout_marginTop="30dp"
+        android:id="@+id/mbti"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mbti"
+        android:textSize="25dp"
+        android:text="아이디 : "
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/bamin_res"
+        android:layout_marginTop="30dp"
+        android:id="@+id/startID"
+
+
+        />
+
+    <TextView
+        android:id="@+id/IdView"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mbti"
+        android:layout_alignRight="@+id/startAge"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="-181dp"
+        android:layout_toRightOf="@+id/startName"
+        android:fontFamily="@font/bamin_res"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/finishBtn"
+        android:text="종료"
+
+
+
+        />
+
+</RelativeLayout>
